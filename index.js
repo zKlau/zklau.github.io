@@ -12,5 +12,5 @@ const port = 3000
 
 // Listen on defined port
 app.listen(port, () => {
-    console.log(`Web server started`)
+    console.log(`Web server started!`)
 })
