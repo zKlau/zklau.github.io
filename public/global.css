@@ -44,7 +44,7 @@ hr {
 /* global components */
 
 /* typography */
-.section__title {
+.section__title,  .developer-languages__title {
   color: var(--primary-color);
 }
 li {

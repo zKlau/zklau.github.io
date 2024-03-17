@@ -10,20 +10,32 @@ var getAll = function (selector, scope) {
 
 if (document.getElementsByClassName('demo').length > 0) {
   var i = 0;
-  var txt = ` My name is Claudiu and I am very passionate about Technology, Paleontology and Astronomy.
+  var txt = ` cat info.txt
+              \nMy name is Claudiu and I am very passionate about Technology, Paleontology and Astronomy.
               \n I am open to learn new things any time.
-              \n I like software and game development but I also have some web development knowledge.`;
-  var speed = 20;
+              \n I like software and game development but I also have some web development knowledge.
+              \n Usually I play Guild Wars 2 or other RolePlaying games I find.`;
+  var speed = 5;
 
   function typeItOut () {
     if (i < txt.length) {
-      document.getElementsByClassName('demo')[0].innerHTML += txt.charAt(i);
-      i++;
+      if (txt.charAt(i) === "<" && txt.charAt(i + 1) === "s") {
+        var closingTagIndex = txt.indexOf(">", i);
+        document.getElementsByClassName('demo')[0].innerHTML += txt.substring(i, closingTagIndex + 1);
+        i = closingTagIndex + 1;
+      } else {
+        document.getElementsByClassName('demo')[0].innerHTML += txt.charAt(i);
+        i++;
+      }
       setTimeout(typeItOut, speed);
+      if(i == txt.length) {
+        document.getElementById('second-command').style.display = 'block'
+      }
     }
+    
   }
-
   setTimeout(typeItOut, 1800);
+  
 }
 
 window.addEventListener("load", function() {
@@ -79,4 +91,15 @@ window.addEventListener('load', function(){
     }
   }
   icon.addEventListener('click', showNav);
+});
+
+// Add CSS class to dynamically inserted HTML elements
+window.addEventListener('DOMContentLoaded', function() {
+  var attributeSpan = document.querySelector('.hljs-attribute');
+  var regexpSpan = document.querySelector('.hljs-regexp');
+  
+  if(attributeSpan && regexpSpan) {
+    attributeSpan.classList.add('hljs-attribute');
+    regexpSpan.classList.add('hljs-regexp');
+  }
 });
