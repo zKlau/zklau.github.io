@@ -1,137 +1,287 @@
-<!doctype html>
-<html>
-  <head>
-      <meta charset="utf-8">
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>zKlau</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
-      <link rel="stylesheet" href="global.css">
-      <link rel="stylesheet" href="landing.css">
-      <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-      <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-  </head>
-  <body>
-    <nav>
-      <div></div>
-      <ul class="menu">
-        <div class="menu__item toggle"><span></span></div>
-        <li class="menu__item"><a href="https://github.com/zKlau" target="_blank" class="link link--dark"><i class="fa fa-github"></i> Projects</a></li>
-        <li class="menu__item"><a href="https://tyriadle.zklau.com/" target="_blank" class="link link--dark"><i class="fa fa-github"></i> Websites</a></li>
-      </ul>
-    </nav>
-    <div class="hero">
-      <h1 class="hero__title">Claudiu Padure</h1>
-      <p class="hero__description">Portfolio</p>
-    </div>
-    <div class="hero__terminal">
-      <pre>
-        <code class="shell-session demo hljs nginx"><span class="hljs-attribute">claudiu@padure</span> <span class="hljs-regexp">~ $</span></code>
-        <code class="shell-session demo hljs nginx " id="second-command"style="display: none;"><span class="hljs-attribute">claudiu@padure</span> <span class="hljs-regexp">~ $</span></code>
-      </pre>
-    </div>
-    <div class="wrapper">
-      <div class="installation">
-        <h3 class="section__title">Contact</h3>
-        <div class="tab__container">
-          <ul class="tab__menu">
-            <li class="tab active" data-tab="email">Email</li>
-            <li class="tab" data-tab="discord">Discord</li>
-            <li class="tab" data-tab="steam">Steam</li>
-          </ul>
-          <pre class="nohighlight code">
-            <code class="tab__pane active email">$  claudiu@duck.com</code>
-            <code class="tab__pane discord">$  zKlau#5873</code>
-            <code class="tab__pane steam">$  <a href = "https://steamcommunity.com/id/mrklau/">mrklau</a></code>
-          </pre>
-        </div>
-      </div>
-      <div class="feature">
-        <div class="feature__item">
-          <h3 class="section__title">Projects</h3>
-          <p>I'm still trying to do more projects!</p>
-          <p> - <a href = "https://github.com/zKlau"/><span class="iconify" data-icon="akar-icons:github-fill" data-inline="false"></span> Github</a></p>
-          <p> - <a href = "https://klauss.itch.io"> <span class="iconify" data-icon="cib:itch-io" data-inline="false"></span> Itch.io</a></p>
-        </div>
-        <div class="feature__item">
-          <h3 class="section__title">Education</h3>
-          <p>Currently studying computer science at "Lucian Blaga" University of Sibiu since in 2023.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0  maximum-scale=1, minimum-scale=1">
+    <meta name="description" content="Claudiu Padure Software and Web Developer portofolio">
+    <meta name="keywords" content="portofolio, zklau, Claudiu Padure, software developer, web developer, developer">
+    <script src="scripts/scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="scripts/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+    <link rel="stylesheet" href="style-main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Silkscreen:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <title>Claudiu Padure</title>
+</head>
+<body id="body">
+    
+    <div id="header">
+        <div id="title">
+            I am <br>
+            <span id="name"> Claudiu</span><span id="name2"> Pădure</span>
+            <div id="role">
+                a <span id="role-anim">Software Developer</span>
+            </div>
+            <a href="https://github.com/zklau"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+            </a> 
+            <a href="https://twitter.com/zklauss"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg" /></a> 
+            <a href="mailto:claudiupadure19@gmai.com"><img src="images/email_3178158.png" />
+            </a>
+            <br>
         </div>
         
-        <div class="feature__item">
-          <h3 class="section__title">Coding Problem Websites</h3>
-          <p>My CodeWars profile is <a href="https://www.codewars.com/users/zKlau">zKlau.</a></p>
-          <p>My Leetcode profile is <a href="https://leetcode.com/zKlau/">zKlau.</a></p>
+        <div id="me-photo">
+            <img src="images/ME-modificat2.png" alt="" >
         </div>
-      </div>
-      
-      
-      <div class="software-section">
-        <h3 class="developer-languages__title">Software Toolbox</h3>
-        <div class="software-list">
-          <div class="language">
-            <span class="software-name">Visual Studio & VS Code</span>
-            <span class="language__description">Integrated development environments</span>
-          </div>
-          <div class="language">
-            <span class="software-name">Unreal Engine, GODOT & Unity</span>
-            <span class="language__description">Game development engines</span>
-          </div>
-          <div class="language">
-            <span class="software-name">GIMP & Photoshop</span>
-            <span class="language__description">Graphic design and image editing</span>
-          </div>
-          <div class="language">
-            <span class="software-name">Blender, Dust, Blockbench</span>
-            <span class="language__description">3D modeling and animation</span>
-          </div>
-          <div class="language">
-            <span class="software-name">Filmora 9 & Sony Vegas Pro</span>
-            <span class="language__description">Video editing</span>
-          </div>
-          <div class="language">
-            <span class="software-name">Aseprite, Clip Studio Paint & Paint Tool SAI</span>
-            <span class="language__description">Pixel art and digital painting</span>
-          </div>
-          
+        
+    
+        <div id="triggerMe"></div>
+        <div id="me-photo-bg">
+            <img src="images/New Project.svg" alt="">
         </div>
-      </div>
-      
-    </div>
-    <br>
-    <div class="developer-languages">
-      <div class="developer-languages__title ">Languages</div>
-      <div class="developer-languages__list">
-        <div class="language">
-          <div class="language__name">Python</div>
-          <div class="language__description">Scripting, automation, and data analysis</div>
-        </div>
-        <div class="language">
-          <div class="language__name">JavaScript</div>
-          <div class="language__description">Primary language, Front-end and back-end web development</div>
-        </div>
-        <div class="language">
-          <div class="language__name">Node.js</div>
-          <div class="language__description">Server-side scripting and web application development</div>
-        </div>
-        <div class="language">
-          <div class="language__name">C++</div>
-          <div class="language__description">Low-level programming and algorithm development</div>
-        </div>
-        <div class="language">
-          <div class="language__name">C#</div>
-          <div class="language__description">Game development</div>
-        </div>        
-        <div class="language">
-          <div class="language__name">Java</div>
-          <div class="language__description">Fundamental knowledge for application development</div>
-        </div>
-      </div>
+        
     </div>
     
-    <footer class="footer">claudiu@duck.com © Claudiu Padure. All Rights Reserved.</footer>
-    <script src="scribbler.js"></script>
-  </body>
+    <div id="triggerBackground"></div>
+    <div id="about-trigger"></div>
+    <div id="page-body">
+
+        <div id="about">
+            <span class="section-title">&ensp;About&ensp;</span>
+            <br>
+            <p>
+                Hello! My name is Claudiu Pădure, and I am a software and web developer based in Sibiu, România. Ever since I was a child, I've loved creating. Over the years, I've gained knowledge and experience that now fuel my passion for building exciting projects—whether it's websites, games, software, or anything else I set my mind to.
+            </p>
+        </div>
+
+
+
+        <div id="skills">
+            <span id="skills-title" class="section-title">&ensp;My Skills&ensp;</span>
+            <br>
+            
+        <div id="triggerBackground2"></div>
+        <div id="mid-img">
+            <img src="images/2nd-svg.svg" alt="">
+        </div>
+            <div class="skills">
+                <div class="skill-window">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                    <span>Python</span>
+                </div>
+                <div class="skill-window">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-window">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+                    <span>Node.js</span>
+                </div>
+                <div class="skill-window">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" />
+                    <span>jQuery</span>
+                </div>
+                
+                <div class="skill-window">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                    <span>HTML</span>
+                </div>
+                <div class="skill-window">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                    <span>CSS</span>
+                </div>
+                
+                <div class="skill-window">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+                    
+                    <div id="projects-trigger"></div>
+                    <span>C/C++</span>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div id="projects">
+            <span class="section-title">&ensp;Projects&ensp;</span>
+            <br><br>
+            <div class="skills">
+                <div class="card" onclick="link('https://github.com/zKlau/Soundboard?tab=readme-ov-file')">
+                    <img src="images/th-1099775760.jpg" alt="">
+                    <div class="card-content">
+                        <div class="card-title">Soundboard</div>
+                        <div class="card-desc">
+                            Python, JavaScript, HTML, CSS
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="link('https://github.com/zKlau/EmulatorJS-Cloud-Saving')">
+                    <img src="images/vector-cloud-computing-download-m-1155-80154449.jpg" alt="">
+                    <div class="card-content">
+                        <div class="card-title">Electron.Js  Cloud Saving</div>
+                        <div class="card-desc">
+                            JavaScript
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="link('https://github.com/zKlau/ComputerWebRemoteControl?tab=readme-ov-file')">
+                    <img src="images/68747470733a2f2f696d6775722e636f6d2f493745504a69652e706e67.png" alt="">
+                    <div class="card-content">
+                        <div class="card-title">Computer WEB Remote Control</div>
+                        <div class="card-desc">
+                            Python, Node.Js, JavaScript, HTML, CSS
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="link('https://tyriadle.zklau.com/')">
+                    <img src="images/Tyriadle logo.png" alt="">
+                    <div class="card-content">
+                        <div class="card-title">Tyriadle</div>
+                        <div class="card-desc">
+                            Node.Js, JavaScript, HTML, CSS
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="link('https://geo.zklau.com/')">
+                    <img src="images/Tyriadle geo logo.png" alt="">
+                    <div class="card-content">
+                        <div class="card-title">Tyriadle Geoguessr</div>
+                        <div class="card-desc">
+                            Node.Js, JavaScript, HTML, CSS
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        </div>
+</body>
+<script>
+    var controller = new ScrollMagic.Controller();
+    var tween = TweenMax.to("#me-photo", 1, { x: "100%"});
+    new ScrollMagic.Scene({triggerElement: "#triggerMe", duration: "1000"})
+					.setTween(tween)
+					.addTo(controller)
+
+
+    var tween2 = TweenMax.to("#me-photo-bg", 1, { scale: 3})
+
+    new ScrollMagic.Scene({triggerElement: "#triggerBackground", duration: "1000"})
+					.setTween(tween2)
+					.addTo(controller)
+
+    
+    var tween_section = TweenMax.to("#page-body", 1, { opacity: 1})
+
+    new ScrollMagic.Scene({
+        triggerElement: "#about",
+        duration: "#skills"
+    })
+        .setClassToggle('#body', 'background-color-set')
+        .addTo(controller)
+
+    new ScrollMagic.Scene({
+            triggerElement: "#about"
+        })
+        .setClassToggle('#me-photo-bg', 'hide-bg') 
+        .addTo(controller)
+
+    new ScrollMagic.Scene({
+            triggerElement: "#about"
+        })
+        .setClassToggle('#me-photo', 'hide-bg') 
+        .addTo(controller)
+
+    
+
+    new ScrollMagic.Scene({
+            triggerElement: "#skills"
+        })
+        .setClassToggle('.skill-window', 'type-anim') 
+        .addTo(controller)
+    new ScrollMagic.Scene({triggerElement: "#skills"})
+                .setClassToggle('#skills','appear-in-skills')
+                .addTo(controller)
+
+
+    var tween3 = TweenMax.to("#mid-img", 1, { scale: 6.5})
+
+    new ScrollMagic.Scene({triggerElement: "#triggerBackground2", duration: "500"})
+                .setTween(tween3)
+                .addTo(controller)
+
+    new ScrollMagic.Scene({
+        triggerElement: "#about-trigger"
+    })
+        .setClassToggle('#about','appear-in-skills')
+        .addTo(controller)
+
+        new ScrollMagic.Scene({
+        triggerElement: "#projects-trigger"
+    })
+        .setClassToggle('#projects','appear-in-skills')
+        .addTo(controller)
+    
+        new ScrollMagic.Scene({
+            triggerElement: "#projects-trigger"
+        })
+        .setClassToggle('.card', 'type-anim') 
+        .addTo(controller)
+
+
+        new ScrollMagic.Scene({
+        triggerElement: "#skills"
+    })
+        .setClassToggle('#me-photo-bg','scale0')
+        .addTo(controller)
+
+    /*.on("progress", function (event) {
+            var progress = event.progress; // Get scroll progress (0 to 1)
+            // Calculate new position: start at 50% and move towards 80% viewport width
+            var newPosition = progress*60; // 50% + 30% (to move to 80%)
+            document.getElementById("me-photo").style.transform = `translateX(-50%) translateX(${newPosition}vw)`;
+            document.getElementById("me-photo-bg").style.transform = `translateX(-50%) translateX(${newPosition*2}vw)`;
+        })
+        .addTo(controller);
+    */
+
+        const roles = [
+            "Software Developer",
+            "Web Developer",
+            "Student",
+        ];
+        const roleAnim = document.getElementById("role-anim");
+
+
+    const changeRole = (index) => {
+        const role = roles[index % roles.length];
+        let currentText = "";
+        roleAnim.textContent = "";
+
+        
+        role.split("").forEach((char, i) => {
+            setTimeout(() => {
+                currentText += char;
+                roleAnim.style.width += 1
+                roleAnim.innerHTML = currentText;
+            }, i * 50);
+        });
+
+        const typingDuration = role.length * 100;
+        const delayBeforeNext = 500; 
+        setTimeout(() => changeRole(index + 1), typingDuration + delayBeforeNext);
+    };
+
+    changeRole(0);
+
+    function link(l) {
+        window.open(l)
+    }
+
+</script>
 </html>
